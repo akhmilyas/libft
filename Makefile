@@ -6,7 +6,7 @@
 #    By: mstoops <mstoops@student.21-school.ru>     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/05/01 14:10:33 by mstoops           #+#    #+#              #
-#    Updated: 2020/05/02 15:34:53 by mstoops          ###   ########.fr        #
+#    Updated: 2020/05/02 16:07:16 by mstoops          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,7 +24,7 @@ SRC = ft_isprint.c\
 all: $(NAME)
 
 $(NAME):
-	gcc $(FLAGS) -c $(SRC) -o $(NAME)
+	gcc $(FLAGS) -c $(SRC)
 	ar rcs $(NAME) *.o
 
 clean:
@@ -32,5 +32,9 @@ clean:
 
 fclean: clean
 	rm -f $(NAME)
+
+so:
+	gcc *.c -c -fpic
+	gcc *.o -shared -o libft.so
 
 re: fclean all
