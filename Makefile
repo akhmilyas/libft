@@ -6,7 +6,7 @@
 #    By: mstoops <mstoops@student.21-school.ru>     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/05/01 14:10:33 by mstoops           #+#    #+#              #
-#    Updated: 2020/05/02 15:27:34 by mstoops          ###   ########.fr        #
+#    Updated: 2020/05/02 15:34:53 by mstoops          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,7 +24,7 @@ SRC = ft_isprint.c\
 all: $(NAME)
 
 $(NAME):
-	gcc $(FLAGS) -c $(SRC)
+	gcc $(FLAGS) -c $(SRC) -o $(NAME)
 	ar rcs $(NAME) *.o
 
 clean:
