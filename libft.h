@@ -6,7 +6,7 @@
 /*   By: mstoops <mstoops@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/02 14:00:31 by mstoops           #+#    #+#             */
-/*   Updated: 2020/05/02 17:52:33 by mstoops          ###   ########.fr       */
+/*   Updated: 2020/05/02 18:23:00 by mstoops          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,5 +26,6 @@ int		ft_atoi(const char *str);
 void	*ft_memset(void *b, int c, size_t len);
 void	ft_bzero(void *s, size_t n);
 void	*ft_memcpy(void *dst, const void *src, size_t n);
+void	*ft_memccpy(void *dst, const void *src, int c, size_t n);
 
 #endif
