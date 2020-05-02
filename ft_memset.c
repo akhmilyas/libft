@@ -1,30 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mstoops <mstoops@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/05/02 14:00:31 by mstoops           #+#    #+#             */
-/*   Updated: 2020/05/02 16:27:27 by mstoops          ###   ########.fr       */
+/*   Created: 2020/05/02 16:25:48 by mstoops           #+#    #+#             */
+/*   Updated: 2020/05/02 16:34:08 by mstoops          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
-# include <stdlib.h>
+#include "libft.h"
 
-int		ft_toupper(int c);
-int		ft_tolower(int c);
-int		ft_isprint(int c);
-int		ft_isdigit(int c);
-int		ft_isascii(int c);
-int		ft_isalpha(int c);
-int		ft_isalnum(int c);
-int		ft_atoi(const char *str);
+void	*ft_memset(void *b, int c, size_t len)
+{
+	size_t			i;
+	char			*tmp;
+	unsigned char	const_byte;
 
-void	*ft_memset(void *b, int c, size_t len);
-void	ft_bzero(void *s, size_t n);
-void	*ft_memcpy(void *dest, const void *src, size_t n);
-
-#endif
+	i = 0;
+	tmp = (char*)b;
+	const_byte = (unsigned char)c;
+	while (i < len)
+		tmp[i++] = const_byte;
+	return (b);
+}
