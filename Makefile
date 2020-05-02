@@ -6,7 +6,7 @@
 #    By: mstoops <mstoops@student.21-school.ru>     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/05/01 14:10:33 by mstoops           #+#    #+#              #
-#    Updated: 2020/05/02 16:30:38 by mstoops          ###   ########.fr        #
+#    Updated: 2020/05/02 16:35:18 by mstoops          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,6 +27,7 @@ SRC = ft_isprint.c\
 	ft_memmove.c\
 	ft_memchr.c\
 	ft_memcmp.c\
+	ft_strlen.c\
 
 all: $(NAME)
 
