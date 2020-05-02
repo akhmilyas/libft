@@ -6,7 +6,7 @@
 #    By: mstoops <mstoops@student.21-school.ru>     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/05/01 14:10:33 by mstoops           #+#    #+#              #
-#    Updated: 2020/05/02 18:11:51 by mstoops          ###   ########.fr        #
+#    Updated: 2020/05/02 19:41:57 by mstoops          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -42,9 +42,5 @@ clean:
 
 fclean: clean
 	rm -f $(NAME)
-
-so:
-	gcc *.c -c -fpic
-	gcc *.o -shared -o libft.so
 
 re: fclean all
