@@ -1,30 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mstoops <mstoops@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/05/02 14:00:31 by mstoops           #+#    #+#             */
-/*   Updated: 2020/05/02 17:52:33 by mstoops          ###   ########.fr       */
+/*   Created: 2020/05/02 17:50:25 by mstoops           #+#    #+#             */
+/*   Updated: 2020/05/02 18:14:42 by mstoops          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
-# include <stdlib.h>
+#include "libft.h"
 
-int		ft_toupper(int c);
-int		ft_tolower(int c);
-int		ft_isprint(int c);
-int		ft_isdigit(int c);
-int		ft_isascii(int c);
-int		ft_isalpha(int c);
-int		ft_isalnum(int c);
-int		ft_atoi(const char *str);
+void	*ft_memcpy(void *dst, const void *src, size_t n)
+{
+	unsigned char	*dest;
+	unsigned char	*source;
+	size_t			i;
 
-void	*ft_memset(void *b, int c, size_t len);
-void	ft_bzero(void *s, size_t n);
-void	*ft_memcpy(void *dst, const void *src, size_t n);
-
-#endif
+	dest = (unsigned char*)dst;
+	source = (unsigned char*)src;
+	i = 0;
+	if (dst == 0 && src == 0)
+		return (dst);
+	while (i < n)
+	{
+		dest[i] = source[i];
+		i++;
+	}
+	return (dst);
+}

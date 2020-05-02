@@ -6,7 +6,7 @@
 #    By: mstoops <mstoops@student.21-school.ru>     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/05/01 14:10:33 by mstoops           #+#    #+#              #
-#    Updated: 2020/05/02 17:35:26 by mstoops          ###   ########.fr        #
+#    Updated: 2020/05/02 17:58:34 by mstoops          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,7 +21,8 @@ SRC = ft_isprint.c\
 	ft_isalnum.c\
 	ft_atoi.c\
 	ft_memset.c\
-	ft_bzero.c
+	ft_bzero.c\
+	ft_memcpy.c
 
 all: $(NAME)
 
