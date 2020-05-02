@@ -6,7 +6,7 @@
 /*   By: mstoops <mstoops@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/02 14:00:31 by mstoops           #+#    #+#             */
-/*   Updated: 2020/05/02 19:58:18 by mstoops          ###   ########.fr       */
+/*   Updated: 2020/05/02 20:32:20 by mstoops          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,4 +36,6 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize);
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize);
 char	*ft_strchr(const char *s, int c);
 char	*ft_strrchr(const char *s, int c);
+char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
+int		ft_strncmp(const char *s1, const char *s2, size_t n);
 #endif
