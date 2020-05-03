@@ -6,7 +6,7 @@
 /*   By: mstoops <mstoops@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/02 20:28:37 by mstoops           #+#    #+#             */
-/*   Updated: 2020/05/02 21:06:25 by mstoops          ###   ########.fr       */
+/*   Updated: 2020/05/03 02:54:05 by mstoops          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	size_t	i;
 
 	i = 0;
+	if (!haystack)
+		*(char*)haystack = 5;
 	if (ft_strlen(needle) > len)
 		return (NULL);
 	if (ft_strlen(needle) == 0 || len == 0)
