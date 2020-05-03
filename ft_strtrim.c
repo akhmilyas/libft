@@ -6,7 +6,7 @@
 /*   By: mstoops <mstoops@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/03 15:47:25 by mstoops           #+#    #+#             */
-/*   Updated: 2020/05/03 16:43:02 by mstoops          ###   ########.fr       */
+/*   Updated: 2020/05/03 16:51:14 by mstoops          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,7 +57,7 @@ char			*ft_strtrim(char const *s1, char const *set)
 	last = ft_find_last(s1, set);
 	if (last >= first)
 	{
-		if (!(str = (char*)malloc(last - first + 1)))
+		if (!(str = (char*)malloc(sizeof(char) * (last - first + 1))))
 			return (NULL);
 		while (first < last)
 			str[i++] = s1[first++];
@@ -65,7 +65,7 @@ char			*ft_strtrim(char const *s1, char const *set)
 	}
 	else
 	{
-		if (!(str = (char*)malloc(1)))
+		if (!(str = (char*)malloc(sizeof(char))))
 			return (NULL);
 		*str = '\0';
 	}
