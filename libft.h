@@ -6,7 +6,7 @@
 /*   By: mstoops <mstoops@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/02 14:00:31 by mstoops           #+#    #+#             */
-/*   Updated: 2020/05/03 19:54:43 by mstoops          ###   ########.fr       */
+/*   Updated: 2020/05/03 20:05:34 by mstoops          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,4 +52,5 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 void	ft_putchar_fd(char c, int fd);
 void	ft_putstr_fd(char *s, int fd);
 void	ft_putendl_fd(char *s, int fd);
+void	ft_putnbr_fd(int n, int fd);
 #endif
