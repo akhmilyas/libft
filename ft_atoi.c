@@ -6,7 +6,7 @@
 /*   By: mstoops <mstoops@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/02 15:11:40 by mstoops           #+#    #+#             */
-/*   Updated: 2020/05/02 16:20:29 by mstoops          ###   ########.fr       */
+/*   Updated: 2020/05/03 13:25:13 by mstoops          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,5 +33,5 @@ int	ft_atoi(const char *str)
 		result = result * 10 + str[i] - '0';
 		i++;
 	}
-	return ((int)sign * result);
+	return ((int)(sign * (long)result));
 }
