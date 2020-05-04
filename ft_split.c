@@ -6,7 +6,7 @@
 /*   By: mstoops <mstoops@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/03 17:32:13 by mstoops           #+#    #+#             */
-/*   Updated: 2020/05/04 22:10:49 by mstoops          ###   ########.fr       */
+/*   Updated: 2020/05/04 22:58:40 by mstoops          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,7 +71,7 @@ char	**ft_split(char const *s, char c)
 		while (s[j] && s[j] == c)
 			j++;
 		if (!(tab[i] = ft_substr(s, j, get_word_len(&s[j], c))))
-			return(ft_free_tab(tab, i));
+			return (ft_free_tab(tab, i));
 		while (s[j] && s[j] != c)
 			j++;
 		i++;
