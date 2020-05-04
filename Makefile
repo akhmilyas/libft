@@ -6,7 +6,7 @@
 #    By: mstoops <mstoops@student.21-school.ru>     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/05/01 14:10:33 by mstoops           #+#    #+#              #
-#    Updated: 2020/05/04 02:59:11 by mstoops          ###   ########.fr        #
+#    Updated: 2020/05/04 19:12:31 by mstoops          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -53,7 +53,7 @@ HEADERS = libft.h
 all: $(NAME)
 
 $(NAME): $(OBJECTS)
-	ar rc $(NAME) $(OBJECTS)
+	ar r $(NAME) $(OBJECTS)
 	ranlib $(NAME)
 
 %.o: %.c $(HEADERS)

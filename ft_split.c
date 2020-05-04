@@ -6,7 +6,7 @@
 /*   By: mstoops <mstoops@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/03 17:32:13 by mstoops           #+#    #+#             */
-/*   Updated: 2020/05/03 18:11:23 by mstoops          ###   ########.fr       */
+/*   Updated: 2020/05/04 22:10:49 by mstoops          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,6 +41,17 @@ size_t	get_word_len(char const *s, char c)
 	return (i);
 }
 
+void	*ft_free_tab(char **tab, size_t i)
+{
+	size_t	j;
+
+	j = 0;
+	while (j < i)
+		free(tab[j]);
+	free(tab);
+	return (NULL);
+}
+
 char	**ft_split(char const *s, char c)
 {
 	size_t	i;
@@ -59,7 +70,8 @@ char	**ft_split(char const *s, char c)
 	{
 		while (s[j] && s[j] == c)
 			j++;
-		tab[i] = ft_substr(s, j, get_word_len(&s[j], c));
+		if (!(tab[i] = ft_substr(s, j, get_word_len(&s[j], c))))
+			return(ft_free_tab(tab, i));
 		while (s[j] && s[j] != c)
 			j++;
 		i++;
