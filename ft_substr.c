@@ -6,7 +6,7 @@
 /*   By: mstoops <mstoops@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/03 16:47:12 by mstoops           #+#    #+#             */
-/*   Updated: 2020/05/03 22:26:10 by mstoops          ###   ########.fr       */
+/*   Updated: 2020/05/08 00:55:18 by mstoops          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 		return (ft_strdup(""));
 	if (!(str = (char*)malloc(sizeof(char) * (len + 1))))
 		return (NULL);
-	while (i < len && s[i])
+	while (i < len && s[start + i])
 	{
 		str[i] = s[start + i];
 		i++;
