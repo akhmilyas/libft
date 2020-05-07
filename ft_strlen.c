@@ -6,7 +6,7 @@
 /*   By: mstoops <mstoops@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/02 16:35:23 by mstoops           #+#    #+#             */
-/*   Updated: 2020/05/08 01:16:51 by mstoops          ###   ########.fr       */
+/*   Updated: 2020/05/08 01:17:24 by mstoops          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,5 +21,3 @@ size_t	ft_strlen(const char *s)
 		len++;
 	return (len);
 }
-
-//
