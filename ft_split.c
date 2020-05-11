@@ -6,7 +6,7 @@
 /*   By: mstoops <mstoops@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/03 17:32:13 by mstoops           #+#    #+#             */
-/*   Updated: 2020/05/05 14:59:08 by mstoops          ###   ########.fr       */
+/*   Updated: 2020/05/11 14:19:16 by mstoops          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,7 +47,7 @@ static void		*ft_free_tab(char **tab, size_t i)
 
 	j = 0;
 	while (j < i)
-		free(tab[j]);
+		free(tab[j++]);
 	free(tab);
 	return (NULL);
 }
