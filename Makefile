@@ -6,7 +6,7 @@
 #    By: mstoops <mstoops@student.21-school.ru>     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/05/01 14:10:33 by mstoops           #+#    #+#              #
-#    Updated: 2020/05/04 19:12:31 by mstoops          ###   ########.fr        #
+#    Updated: 2020/05/14 16:42:42 by mstoops          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -47,7 +47,11 @@ SRC = ft_isprint.c\
 	ft_putendl_fd.c\
 	ft_putnbr_fd.c\
 
+BNS = ft_lstnew.c\
+	ft_lstadd_front.c\
+
 OBJECTS = $(patsubst %.c,%.o,$(SRC))
+BNS_OBJECTS = $(patsubst %.c,%.o,$(BNS))
 HEADERS = libft.h
 
 all: $(NAME)
@@ -59,8 +63,12 @@ $(NAME): $(OBJECTS)
 %.o: %.c $(HEADERS)
 	gcc $(FLAGS) -c $< -o $@
 
+bonus: $(BNS_OBJECTS)
+	ar r $(NAME) $(BNS_OBJECTS)
+	ranlib $(NAME)
+
 clean:
-	rm -f $(OBJECTS)
+	rm -f $(OBJECTS) $(BNS_OBJECTS)
 
 fclean: clean
 	rm -f $(NAME)
