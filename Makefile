@@ -6,7 +6,7 @@
 #    By: mstoops <mstoops@student.21-school.ru>     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/05/01 14:10:33 by mstoops           #+#    #+#              #
-#    Updated: 2020/05/14 17:20:50 by mstoops          ###   ########.fr        #
+#    Updated: 2020/05/14 17:25:13 by mstoops          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -55,6 +55,7 @@ BNS = ft_lstnew.c\
 	ft_lstdelone.c\
 	ft_lstclear.c\
 	ft_lstiter.c\
+	ft_lstmap.c
 
 OBJECTS = $(patsubst %.c,%.o,$(SRC))
 BNS_OBJECTS = $(patsubst %.c,%.o,$(BNS))
