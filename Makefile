@@ -6,7 +6,7 @@
 #    By: mstoops <mstoops@student.21-school.ru>     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/05/01 14:10:33 by mstoops           #+#    #+#              #
-#    Updated: 2020/05/14 16:42:42 by mstoops          ###   ########.fr        #
+#    Updated: 2020/05/14 16:51:10 by mstoops          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -49,6 +49,8 @@ SRC = ft_isprint.c\
 
 BNS = ft_lstnew.c\
 	ft_lstadd_front.c\
+	ft_lstsize.c\
+
 
 OBJECTS = $(patsubst %.c,%.o,$(SRC))
 BNS_OBJECTS = $(patsubst %.c,%.o,$(BNS))
