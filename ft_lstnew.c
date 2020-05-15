@@ -6,7 +6,7 @@
 /*   By: mstoops <mstoops@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/14 16:33:46 by mstoops           #+#    #+#             */
-/*   Updated: 2020/05/14 16:55:52 by mstoops          ###   ########.fr       */
+/*   Updated: 2020/05/15 12:09:10 by mstoops          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ t_list	*ft_lstnew(void *content)
 {
 	t_list	*node;
 
-	if (!(node = malloc(sizeof(t_list))))
+	if (!(node = (t_list*)malloc(sizeof(t_list))))
 		return (NULL);
 	node->content = content;
 	node->next = NULL;
