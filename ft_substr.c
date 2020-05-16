@@ -6,7 +6,7 @@
 /*   By: mstoops <mstoops@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/03 16:47:12 by mstoops           #+#    #+#             */
-/*   Updated: 2020/05/16 23:19:10 by mstoops          ###   ########.fr       */
+/*   Updated: 2020/05/16 23:22:53 by mstoops          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 		return (NULL);
 	if (start > ft_strlen(s))
 		return (ft_strdup(""));
-	if (start + len > ft_strlen(s))
+	if (len > ft_strlen(s))
 		len = ft_strlen(s) - start;
 	if (!(str = (char*)malloc(sizeof(char) * (len + 1))))
 		return (NULL);
