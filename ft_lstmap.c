@@ -6,7 +6,7 @@
 /*   By: mstoops <mstoops@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/14 17:25:19 by mstoops           #+#    #+#             */
-/*   Updated: 2020/05/15 17:33:53 by mstoops          ###   ########.fr       */
+/*   Updated: 2020/05/16 14:19:58 by mstoops          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,8 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 		}
 		ft_lstadd_back(&new, tmp);
 		lst = lst->next;
+		free(tmp);
+		tmp = NULL;
 	}
 	return (new);
 }
