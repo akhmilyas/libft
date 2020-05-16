@@ -6,7 +6,7 @@
 /*   By: mstoops <mstoops@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/02 15:11:40 by mstoops           #+#    #+#             */
-/*   Updated: 2020/05/04 02:59:54 by mstoops          ###   ########.fr       */
+/*   Updated: 2020/05/16 21:14:58 by mstoops          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,10 +30,6 @@ int	ft_atoi(const char *str)
 		i++;
 	while (ft_isdigit(str[i]))
 	{
-		if (result < 0 && sign < 0)
-			return (0);
-		else if (result < 0 && sign > 0)
-			return (-1);
 		result = result * 10 + str[i] - '0';
 		i++;
 	}
