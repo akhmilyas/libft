@@ -2,6 +2,6 @@
 
 Защищен с первого раза.
 
-![image-20200518211000543](/Users/ilyas/Library/Application Support/typora-user-images/image-20200518211000543.png)
+![image-20200518211350823](img/image-20200518211350823.png)
 
 Единственная ошибка в задании lstmap исправлена.
